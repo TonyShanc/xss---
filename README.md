@@ -1,9 +1,16 @@
 # xss-target
-##A xss target for practicing
+代码出处未知，当时看到网上有很多它的wp，无奈的是提供的在线靶场链接都失效了，现在找到了就分享给大家。
+###### linux 虚拟机内部署：
+安装php:
+```bash
+sudo apt-get update
+sudo apt-get install php
+```
+部署项目：
+```bash
+cd /项目文件夹
+php -S <ip>:<port> 
+```
+想只让虚拟机本地访问,ip请设成localhost或127.0.0.1  想让宿主机访问请将ip设成虚拟机的ip:192.168.xxx.xxx
 
-
-####1. 这是一个php的xss的练习靶场，在自己的服务器上部署好，访问url即可开始
-
-####2. 并不知道这个源码的来源，找了很久没找到是谁写的，我就把他放在自己的github上跟大家一起分享
-
-####3. 一共20关，基本都是xss的一些绕过方法，想学习xss-Wsl的朋友可以从最简单开始
+附:[前18关writeup.](https://www.cnblogs.com/xiaomeng2333/p/11595786.html)
